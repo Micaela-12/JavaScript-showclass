@@ -1,0 +1,52 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+.formulario {
+    background-color: blueviolet;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .formulario_titulo {
+    color: black;
+    background-color: white;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  text-decoration:dotted;
+  
+  }
+  
+
+  .formulario_boton {
+    background-color: white;
+    color: blueviolet;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .boton_especial {
+    background-color: black;
+    color: blueviolet;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            font-size: 17px;
+  }
+
+  .foto {
+      background-color: blueviolet;
+  }

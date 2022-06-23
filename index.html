@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.css"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Sitio web de la productora Showclass  donde podes ver, elegir y contratar el show ideal para tu evento">
+    <meta name="keywords"
+        content="shows, show, eleccion, contrataciones, planilla, presupueto, eleccion, forulario, datos">
+    <link rel="stylesheet" href="./index.css">
+    <title>Formulario de contratacion</title>
+</head>
+<header>
+    <img src="./multimedia/logo.jpg" alt="logo" width="150px" class="foto">
+    <h1 id="titulo" class="formulario_titulo">Showclass Producciones</h1>
+</header>
+
+<body>
+    <form id="formulario" class="formulario">
+
+        <label id="nombre-form" class="formulario__items" for="info personal">Nombre de Homenajeado/a:</label>
+        <input type="text" name="nombreFormulario" id="nombreFormulario" hoplacelder="ingrese nombre" />
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Fecha de formulario</label>
+        <input type="text" name="fechaFormulario" id="fechaFormulario" hoplacelder="fecha" />
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Direccion de formulario</label>
+        <input type="text" name="direccionFormulario" id="direccionFormulario" hoplacelder="Direccion" />
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Correo electronico</label>
+        <input type="text" name="mailFormulario" id="mailFormulario" hoplacelder="Correo electronico" />
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Show a contratar</label>
+        <input type="text" name="showFormulario" id="showFormulario" hoplacelder="Show a contratar" />
+        <button type="button" onclick="chequear()" class="formulario_boton">chequear disponibilidad</button>
+
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Horario del show</label>
+        <input type="text" name="horarioFormulario" id="horarioFormulario" hoplacelder="Horario del show" />
+        <br>
+        <label id="nombre-form" class="formulario__items" for="info personal">Numero de contacto</label>
+        <input type="text" name="numeroFormulario" id="numeroFormulario" hoplacelder="¿Por donde nos conociste?" />
+        <br>
+        <label id="sugerenciaFormulario" class="formulario__items" for="info personal">¿Te gustaria una sugerencia de
+            shows?</label>
+        <button type="button" onclick="si()" class="formulario_boton">si</button>
+        <br>
+        <button type="button" onclick="enviar()" class="formulario_boton">enviar</button>
+        <br>
+        <br>
+        <button type="button" id="local" class="boton_especial">Info de nuestra batucada</button>
+        <div>
+            <a href="#" id="jsonBtn" class="boton_especial">Salones con los que trabajamos</a>
+        </div>
+        <div>
+            <div id="resultado"></div>
+        </div>
+    </form>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./formulario.js"></script>
+    <script src="./index.js"></script>
+    <script src="./data.json"></script>
+</body>
+
+</html>
